@@ -11,7 +11,7 @@ let controller_Iphone14_Text = new ScrollMagic.Controller();
 
 timelineLite_Iphone14_Text.fromTo(
   iphone_14_text_container,
-  5,
+  1,
   {
     opacity: 1,
   },
@@ -47,7 +47,7 @@ timelineLite_LeftHand_Iphone
       transform: `translateX(0px)`,
     },
     {
-      transform: `translateX(-2000px)`,
+      transform: `translate(-2000px,-500px)`,
     }
   )
   .from(battery, 1, {
@@ -94,7 +94,7 @@ timelineLite_LeftHand_Iphone
       transform: `translateX(0px)`,
     },
     {
-      transform: `translateX(2000px)`,
+      transform: `translate(2000px,-500px)`,
     },
     //Assuming the wheel tween is the first tween in the timeline and has a start time of 0, you can
     //tell the second tween to start at a time of 0 as well:
@@ -104,7 +104,7 @@ timelineLite_LeftHand_Iphone
 new ScrollMagic.Scene({
   triggerElement: twoIphoneContainer,
   duration: 1000,
-  triggerHook: 0,
+  triggerHook: 0.3,
 })
   .setTween(timelineLite_LeftHand_Iphone)
   .setPin(twoIphoneContainer)

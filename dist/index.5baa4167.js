@@ -543,7 +543,7 @@ console.log((0, _gradientBackgroundPngDefault.default), (0, _gradientBackgroundR
 let timelineLite_Iphone14_Text = new TimelineLite();
 let iphone_14_text_container = document.getElementById("iphone_14_text_container");
 let controller_Iphone14_Text = new ScrollMagic.Controller();
-timelineLite_Iphone14_Text.fromTo(iphone_14_text_container, 5, {
+timelineLite_Iphone14_Text.fromTo(iphone_14_text_container, 1, {
     opacity: 1
 }, {
     opacity: 0
@@ -564,7 +564,7 @@ let Big_Text_Left_Hand_Iphone = document.getElementById("Big_Text_Left_Hand_Ipho
 timelineLite_LeftHand_Iphone.fromTo(left_Hand_Iphone, 3, {
     transform: `translateX(0px)`
 }, {
-    transform: `translateX(-2000px)`
+    transform: `translate(-2000px,-500px)`
 }).from(battery, 1, {
     position: "absolute",
     left: `40%`,
@@ -590,14 +590,14 @@ timelineLite_LeftHand_Iphone.fromTo(left_Hand_Iphone, 3, {
 }, 0).fromTo(right_Hand_Iphone, 3, {
     transform: `translateX(0px)`
 }, {
-    transform: `translateX(2000px)`
+    transform: `translate(2000px,-500px)`
 }, //Assuming the wheel tween is the first tween in the timeline and has a start time of 0, you can
 //tell the second tween to start at a time of 0 as well:
 0);
 new ScrollMagic.Scene({
     triggerElement: twoIphoneContainer,
     duration: 1000,
-    triggerHook: 0
+    triggerHook: 0.3
 }).setTween(timelineLite_LeftHand_Iphone).setPin(twoIphoneContainer).addTo(controller_Two_Iphone);
 let TextcolorChangingEffect_TimelineLite = new TimelineLite();
 let textChangingColorController = new ScrollMagic.Controller();
