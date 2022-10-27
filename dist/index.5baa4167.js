@@ -539,8 +539,10 @@ var _gradientBackgroundReversedPng = require("./asset/gradientBackgroundReversed
 var _gradientBackgroundReversedPngDefault = parcelHelpers.interopDefault(_gradientBackgroundReversedPng);
 var _blackImageJpg = require("./asset/blackImage.jpg");
 var _blackImageJpgDefault = parcelHelpers.interopDefault(_blackImageJpg);
+//1920*1080
 console.log((0, _gradientBackgroundPngDefault.default), (0, _gradientBackgroundReversedPngDefault.default));
 let timelineLite_Iphone14_Text = new TimelineLite();
+let bigContainer = document.getElementById("bigContainer");
 let iphone_14_text_container = document.getElementById("iphone_14_text_container");
 let controller_Iphone14_Text = new ScrollMagic.Controller();
 timelineLite_Iphone14_Text.fromTo(iphone_14_text_container, 1, {
@@ -573,17 +575,24 @@ timelineLite_LeftHand_Iphone.fromTo(left_Hand_Iphone, 3, {
     transformStyle: `preserve-3d`,
     transform: `perspective(1px)`,
     transformOrigin: `right`,
-    transform: `perspective(10px) translate3d(42px, -62px, -85px)`
+    transform: `perspective(10px) translate3d(42px, -62px, -35px)`
 }).to(battery, 1, {
     transform: `perspective(264.697px) translate3d(22.8692px, -21.8274px, 70.4483px) rotate(-2.1488deg) rotateY(-11.3716deg) rotateX(15.5338deg) skew(6.1993deg, 0deg) scale(0.9474, 0.9422)`,
     transformOrigin: `100% 50%`,
     transformStyle: `preserve - 3d`,
     width: `340px`,
-    top: `300px`,
+    top: `150px`,
     left: `40 %`,
-    position: `absolute`,
-    opacity: 1
-}, 0).fromTo(batteryColorFiller, 1, {
+    position: `absolute`
+}, 0).to(battery, 3, {
+    transform: `perspective(264.697px) translate3d(22.8692px, -21.8274px, 70.4483px) rotate(-2.1488deg) rotateY(10.3716deg) rotateX(-15.5338deg) skew(6.1993deg, 0deg) scale(0.9474, 0.9422)`,
+    transformOrigin: `100% 50%`,
+    transformStyle: `preserve - 3d`,
+    width: `340px`,
+    top: `150px`,
+    left: `40 %`,
+    position: `absolute`
+}, "-=2").fromTo(batteryColorFiller, 1, {
     width: `0%`
 }, {
     width: `100%`
@@ -602,7 +611,6 @@ new ScrollMagic.Scene({
 let TextcolorChangingEffect_TimelineLite = new TimelineLite();
 let textChangingColorController = new ScrollMagic.Controller();
 let textChangingColorContainer = document.getElementById("textChangingColorContainer");
-let bigContainer = document.getElementById("bigContainer");
 let textChangingColor = document.getElementById("textChangingColor");
 let text_changing = document.getElementById("text_changing");
 TextcolorChangingEffect_TimelineLite.from(textChangingColor, 2, {
