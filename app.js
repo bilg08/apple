@@ -1,4 +1,3 @@
-import batteryLow from './asset/batteryLow.png'
 import gradientBackground from "./asset/gradientBackground.png";
 import gradientBackgroundReversed from "./asset/gradientBackgroundReversed.png";
 
@@ -19,7 +18,7 @@ timelineLite_Iphone14_Text.fromTo(
   }
 );
 
- new ScrollMagic.Scene({
+new ScrollMagic.Scene({
   triggerElement: iphone_14_text_container,
   duration: 100,
   triggerHook: 0,
@@ -27,15 +26,6 @@ timelineLite_Iphone14_Text.fromTo(
   .setTween(timelineLite_Iphone14_Text)
   .setPin(iphone_14_text_container)
   .addTo(controller_Iphone14_Text);
-
-
-
-
-
-
-
-
-
 
 let timelineLite_LeftHand_Iphone = new TimelineLite();
 let controller_Two_Iphone = new ScrollMagic.Controller();
@@ -50,39 +40,43 @@ let Big_Text_Left_Hand_Iphone = document.getElementById(
 timelineLite_LeftHand_Iphone
   .fromTo(
     left_Hand_Iphone,
-    6,
+    3,
     {
       transform: `translateX(0px)`,
     },
     {
       transform: `translateX(-2000px)`,
     }
-)
-  .fromTo(
-    battery ,
+  )
+  .from(battery, 1, {
+    position: "absolute",
+    left: `40%`,
+    top: `150px`,
+    width: `50px`,
+    transformStyle: `preserve-3d`,
+    transform: `perspective(1px)`,
+    transformOrigin: `right`,
+    transform: `perspective(10px) translate3d(42px, -62px, -85px)`,
+  })
+  .to(
+    battery,
     1,
     {
-      position: "absolute",
-      left: `40%`,
-      top: `150px`,
-      width: `50px`,
-      opacity: 0,
-      transformStyle: `preserve-3d`,
-      transform: `perspective(1px)`,
-      transformOrigin: `bottom`,
-      transform: `perspective(10px) translate3d(42px, -62px, -835px)`,
-    },
-    {
-      width: `400px`,
-      opacity: 1,
+      transform: `perspective(264.697px) translate3d(22.8692px, -21.8274px, 70.4483px) rotate(-2.1488deg) rotateY(-11.3716deg) rotateX(15.5338deg) skew(6.1993deg, 0deg) scale(0.9474, 0.9422)`,
+      transformOrigin: `100% 50%`,
+      transformStyle: `preserve - 3d`,
+      width: `340px`,
       top: `300px`,
-      transform: `perspective(500px) matrix3d(0.785035, -0.226682, 0.436033, 0, 0, 0.821756, 0.427208, 0, -0.530612, -0.390974, 0.752058, 0, 0, 0, 0, 1) translate3d(100px, 100px, 180px)`,
+      left: `40 %`,
+      position: `absolute`,
+      opacity: 1,
     },
     0
   )
+
   .fromTo(
     batteryColorFiller,
-    3,
+    1,
     {
       width: `0%`,
     },
@@ -93,7 +87,7 @@ timelineLite_LeftHand_Iphone
   )
   .fromTo(
     right_Hand_Iphone,
-    6,
+    3,
     {
       transform: `translateX(0px)`,
     },
@@ -104,39 +98,58 @@ timelineLite_LeftHand_Iphone
     //tell the second tween to start at a time of 0 as well:
     0
   );
-  
- new ScrollMagic.Scene({
-   triggerElement: twoIphoneContainer,
-   duration: 1000,
-   triggerHook: 0,
- })
-   .setTween(timelineLite_LeftHand_Iphone)
-   .setPin(twoIphoneContainer)
-   .addTo(controller_Two_Iphone);
 
-
+new ScrollMagic.Scene({
+  triggerElement: twoIphoneContainer,
+  duration: 1000,
+  triggerHook: 0,
+})
+  .setTween(timelineLite_LeftHand_Iphone)
+  .setPin(twoIphoneContainer)
+  .addTo(controller_Two_Iphone);
 
 let TextcolorChangingEffect_TimelineLite = new TimelineLite();
-let textChangingColorController = new ScrollMagic.Controller()
+let textChangingColorController = new ScrollMagic.Controller();
 let textChangingColorContainer = document.getElementById(
   "textChangingColorContainer"
 );
+let bigContainer = document.getElementById("bigContainer");
 let textChangingColor = document.getElementById("textChangingColor");
 let text_changing = document.getElementById("text_changing");
 TextcolorChangingEffect_TimelineLite.fromTo(
+  
   textChangingColor,
-  1000,
+  5,
   {
-    // webkitTextFillColor: "transparent",
-    // webkitBackgroundClip: "text",
-    top:`50%`,
+    fontSize: `50px`,
+    webkitBackgroundClip: "text",
+    background: `linear-gradient( 126.3deg,  rgba(30,2,83,1) 32.2%, rgba(198,55,160,0.46) 109.2% )`,
+    webkitTextFillColor: "transparent",
+    color: "red",
   },
   {
-    // webkitTextFillColor: "transparent",
-    // webkitBackgroundClip: "text",
-    top:`-100%`
+    fontSize: `50px`,
+    webkitBackgroundClip: "text",
+    // backgroundImage:`url(${gradientBackgroundReversed})`,
+    // // ???
+    // // background-image: linear-gradient( 109.6deg,  rgba(255,24,134,1) 11.2%, rgba(252,232,68,1) 52%, rgba(53,178,239,1) 100.2% );
+    // // background-image: linear-gradient( 109.6deg,  rgba(255,174,0,1) 11.2%, rgba(255,0,0,1) 100.2% );
+    background: "linear-gradient( 109.6deg,  #FF8DC7,#FFACC7",
+    webkitTextFillColor: `text`,
+    webkitTextFillColor: "transparent",
   }
-);
+)
+  .to(textChangingColor, 5, {
+    fontSize: `50px`,
+    webkitBackgroundClip: "text",
+    background: `linear-gradient( 126.3deg,  rgba(30,2,83,1) 32.2%, rgba(198,55,160,0.46) 109.2% )`,
+    webkitTextFillColor: "transparent",
+    color: "red",
+  })
+ 
+ 
+  
+
 
 new ScrollMagic.Scene({
   triggerHook: 0,

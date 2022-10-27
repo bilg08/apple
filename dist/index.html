@@ -15,6 +15,7 @@
 #mainContainer {
   max-width: 1350px;
   margin: auto;
+  overflow: hidden;
 }
 
 #iphone_14_text_container {
@@ -23,15 +24,6 @@
   justify-content: center;
   align-items: center;
   display: flex;
-}
-
-#twoIphoneContainer {
-  width: 100%;
-  background-color: red;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  position: relative;
 }
 
 </style>
@@ -47,29 +39,24 @@
             <div style="width: 150px; height: 50px">
               <div style="width: 100%; height: 100%; background: #5bc236" id="batteryColorFiller"></div>
             </div>
-            <!-- <img style="width: 100%;" src="./asset/batteryLow.png"/> -->
             <h1>Our longest battery life ever.</h1>
           </div>
           <div style="flex-direction: column; justify-content: center; align-items: center; display: flex; position: absolute; top: 0; left: -100px" id="left_Hand_Iphone">
-            <!-- <h1 id="Big_Text_Left_Hand_Iphone" style="font-weight: bold;color: red">Big</h1> -->
             <img src="/rightHandIphone14.9e76ccf5.jpg">
           </div>
           <div style="position: absolute; top: 0; right: 0" id="right_Hand_Iphone">
-            <!-- <h1 style="font-weight: bold;color: red ;transform: skew(-10deg, -15deg);position: absolute;top:30;left:40;opacity: 0;">and bigger</h1> -->
             <img src="/leftHandIphone14.abd6b921.jpg">
           </div>
         </div>
-        <div style="width: 100%; z-index: 200; height: 100vh; background: #000; position: relative; overflow: hidden" id="textChangingColorContainer">
-          <h1 style="color: #0000; color: red; z-index: 1000; color: #fff; background-color: #0000; padding: 10px; font-family: arial; font-size: 40px; font-weight: bold; display: inline-block; position: absolute; overflow: hidden" id="text_changing">
-            A magical new way to interact with iPhone. Groundbreaking safety
-            features designed to save lives. An innovative 48MP camera for
-            mind-blowing detail. All powered by the ultimate smartphone chip.
-          </h1>
-          <div id="textChangingColor" style="width: 100%; z-index: 100; height: 100%; background: url(&quot;gradientBackgroundReversed.ec61aa8d.png&quot;); justify-content: center; align-items: center; font-size: 72px; display: flex; position: absolute">
+        <div id="textChangingColorContainer" style="width: 100%; height: 100vh; background: #000; justify-content: center; align-items: center; display: flex">
+
+          <div id="textChangingColor" style="width: 100%; height: 100%; -webkit-text-fill-color: transparent; background-image: url(&quot;gradientBackground.8bc61098.png&quot;); -webkit-background-clip: text; justify-content: center; align-items: center; font-weight: bold; display: flex">
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, quia. Eligendi perspiciatis maxime nobis distinctio? At beatae eveniet, fugiat soluta cupiditate perferendis reiciendis, quis non repellat aut, voluptates iure omnis!</p>
             </div>
+          </div>
         </div>
       </div>
-    </div>
+    
   </body>
 
   <script src="/index.5baa4167.js" defer=""></script>
