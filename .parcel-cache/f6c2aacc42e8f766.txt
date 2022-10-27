@@ -1,6 +1,6 @@
-4342
+4345
 72C:\Users\User\Documents\apple\node_modules\weak-lru-cache\LRFUExpirer.js133111594003285713 0
-36C:\Users\User\Documents\apple\app.js133113428165809776 0
+36C:\Users\User\Documents\apple\app.js133113469725576876 0
 61C:\Users\User\Documents\apple\node_modules\lmdb\src\lmdb-js.h133111594050948623 0
 82C:\Users\User\Documents\apple\node_modules\caniuse-lite\data\features\audio-api.js133111594037263404 0
 47C:\Users\User\Documents\apple\package-lock.json133111604033157532 0
@@ -19,7 +19,7 @@
 72C:\Users\User\Documents\apple\node_modules\css-tree\lib\walker\create.js133111594032235665 0
 68C:\Users\User\Documents\apple\node_modules\yaml\browser\dist\util.js133111594038957104 0
 90C:\Users\User\Documents\apple\node_modules\caniuse-lite\data\features\loading-lazy-attr.js133111594065394219 0
-35C:\Users\User\Documents\apple\asset133112632438912902 1
+35C:\Users\User\Documents\apple\asset133113456893170021 1
 70C:\Users\User\Documents\apple\node_modules\lines-and-columns\README.md133111594002537005 0
 74C:\Users\User\Documents\apple\node_modules\caniuse-lite\data\regions\MR.js133111594066743608 0
 64C:\Users\User\Documents\apple\node_modules\@parcel\cache\LICENSE133111593996755172 0
@@ -56,10 +56,10 @@
 76C:\Users\User\Documents\apple\node_modules\csso\lib\replace\property\font.js133111594033357888 0
 61C:\Users\User\Documents\apple\node_modules\dom-serializer\lib133111594023326494 1
 77C:\Users\User\Documents\apple\node_modules\type-fest\ts41\delimiter-case.d.ts133111594019614132 0
-34C:\Users\User\Documents\apple\dist133113428166973792 1
+34C:\Users\User\Documents\apple\dist133113469726580577 1
 74C:\Users\User\Documents\apple\node_modules\caniuse-lite\data\regions\AG.js133111594017858795 0
 51C:\Users\User\Documents\apple\node_modules\entities133111594025856313 1
-40C:\Users\User\Documents\apple\index.html133113427384490634 0
+40C:\Users\User\Documents\apple\index.html133113461523719345 0
 85C:\Users\User\Documents\apple\node_modules\@parcel\utils\test\input\config\empty.toml133111594052070911 0
 56C:\Users\User\Documents\apple\node_modules\@lezer\common133111594009782839 1
 67C:\Users\User\Documents\apple\node_modules\term-size\vendor\windows133111594006665350 1
@@ -873,7 +873,7 @@
 88C:\Users\User\Documents\apple\node_modules\@parcel\fs-search\fs-search.darwin-arm64.node133111594011298079 0
 70C:\Users\User\Documents\apple\node_modules\type-fest\source\entry.d.ts133111594021877087 0
 87C:\Users\User\Documents\apple\node_modules\node-gyp-build-optional-packages\optional.js133111594004340843 0
-74C:\Users\User\Documents\apple\dist\gradientBackgroundReversed.ec61aa8d.png133113424263359386 0
+74C:\Users\User\Documents\apple\dist\gradientBackgroundReversed.ec61aa8d.png133113467463511780 0
 66C:\Users\User\Documents\apple\node_modules\@parcel\fs\src\types.js133111594019795466 0
 81C:\Users\User\Documents\apple\node_modules\type-fest\source\iterable-element.d.ts133111594024800368 0
 90C:\Users\User\Documents\apple\node_modules\@babel\highlight\node_modules\has-flag\index.js133111593998639868 0
@@ -1071,6 +1071,7 @@
 74C:\Users\User\Documents\apple\node_modules\caniuse-lite\data\regions\BM.js133111594045938486 0
 55C:\Users\User\Documents\apple\node_modules\lmdb\keys.js133111594052901027 0
 75C:\Users\User\Documents\apple\node_modules\terser\lib\compress\inference.js133111594036521459 0
+58C:\Users\User\Documents\apple\dist\blackImage.77e1b0b9.jpg133113467463282393 0
 72C:\Users\User\Documents\apple\node_modules\terser\lib\compress\inline.js133111594036942426 0
 63C:\Users\User\Documents\apple\node_modules\gsap\types\ease.d.ts133111598054702148 0
 80C:\Users\User\Documents\apple\node_modules\terser\lib\compress\native-objects.js133111594038957104 0
@@ -1227,7 +1228,7 @@
 74C:\Users\User\Documents\apple\node_modules\@parcel\workers\src\Profiler.js133111594032497838 0
 70C:\Users\User\Documents\apple\node_modules\source-map\lib\array-set.js133111594006487703 0
 61C:\Users\User\Documents\apple\node_modules\svgo\lib\parser.js133111594035170246 0
-66C:\Users\User\Documents\apple\dist\gradientBackground.8bc61098.png133113424263359386 0
+66C:\Users\User\Documents\apple\dist\gradientBackground.8bc61098.png133113467463441963 0
 74C:\Users\User\Documents\apple\node_modules\caniuse-lite\data\regions\ZA.js133111594074094037 0
 59C:\Users\User\Documents\apple\node_modules\svgo\lib\path.js133111594035504468 0
 61C:\Users\User\Documents\apple\node_modules\escalade\readme.md133111594005636303 0
@@ -2209,7 +2210,7 @@
 65C:\Users\User\Documents\apple\node_modules\gsap\src\PixiPlugin.js133111598048474845 0
 68C:\Users\User\Documents\apple\node_modules\gsap\src\ScrollTrigger.js133111598049426859 0
 65C:\Users\User\Documents\apple\node_modules\gsap\src\TextPlugin.js133111598050010496 0
-65C:\Users\User\Documents\apple\dist\rightHandIphone14.9e76ccf5.jpg133113424263047329 0
+65C:\Users\User\Documents\apple\dist\rightHandIphone14.9e76ccf5.jpg133113467463302341 0
 57C:\Users\User\Documents\apple\node_modules\gsap\src\utils133111598049876075 1
 66C:\Users\User\Documents\apple\node_modules\gsap\src\utils\paths.js133111598048192601 0
 77C:\Users\User\Documents\apple\node_modules\caniuse-lite\data\features\sdch.js133111594069791431 0
@@ -2302,7 +2303,7 @@
 65C:\Users\User\Documents\apple\node_modules\@jridgewell\source-map133111594012418791 1
 77C:\Users\User\Documents\apple\node_modules\entities\lib\decode_codepoint.d.ts133111594026861259 0
 72C:\Users\User\Documents\apple\node_modules\entities\lib\encode-trie.d.ts133111594029991611 0
-45C:\Users\User\Documents\apple\dist\index.html133113427385965363 0
+45C:\Users\User\Documents\apple\dist\index.html133113467463272411 0
 65C:\Users\User\Documents\apple\node_modules\entities\lib\generated133111594028145230 1
 92C:\Users\User\Documents\apple\node_modules\@parcel\transformer-svg\test\parseFuncIRI.test.js133111594009863903 0
 93C:\Users\User\Documents\apple\node_modules\@parcel\transformer-babel\src\remapAstLocations.js133111594023958305 0
@@ -3025,6 +3026,7 @@
 84C:\Users\User\Documents\apple\node_modules\caniuse-lite\data\features\css-regions.js133111594057351591 0
 84C:\Users\User\Documents\apple\node_modules\@parcel\optimizer-image\lib\loadNative.js133111594001191930 0
 83C:\Users\User\Documents\apple\node_modules\caniuse-lite\data\features\css-resize.js133111594057379734 0
+46C:\Users\User\Documents\apple\asset\black.webp133113456747794206 0
 89C:\Users\User\Documents\apple\node_modules\caniuse-lite\data\features\css-revert-value.js133111594057392068 0
 69C:\Users\User\Documents\apple\node_modules\@parcel\transformer-js\lib133111594010167790 1
 90C:\Users\User\Documents\apple\node_modules\@parcel\watcher\src\watchman\WatchmanBackend.hh133111594032458377 0
@@ -4331,12 +4333,13 @@
 58C:\Users\User\Documents\apple\node_modules\.bin\terser.cmd133111594077600839 0
 59C:\Users\User\Documents\apple\dist\batteryFull.f19a1846.png133111718961769246 0
 58C:\Users\User\Documents\apple\dist\batteryLow.426c1b91.png133112598525378332 0
-52C:\Users\User\Documents\apple\dist\index.5baa4167.js133113428166973792 0
-56C:\Users\User\Documents\apple\dist\index.5baa4167.js.map133113428166973792 0
+52C:\Users\User\Documents\apple\dist\index.5baa4167.js133113469726580577 0
+56C:\Users\User\Documents\apple\dist\index.5baa4167.js.map133113469726580577 0
 52C:\Users\User\Documents\apple\dist\index.7c0ccee6.js133111595997866365 0
-60C:\Users\User\Documents\apple\dist\iphone14text.40970c67.png133113424263047329 0
-64C:\Users\User\Documents\apple\dist\leftHandIphone14.abd6b921.jpg133113424263047329 0
+60C:\Users\User\Documents\apple\dist\iphone14text.40970c67.png133113467463282393 0
+64C:\Users\User\Documents\apple\dist\leftHandIphone14.abd6b921.jpg133113467463302341 0
 51C:\Users\User\Documents\apple\asset\batteryFull.png133111659057734206 0
+50C:\Users\User\Documents\apple\asset\blackImage.jpg133113456894396734 0
 66C:\Users\User\Documents\apple\asset\gradientBackgroundReversed.png133112632438912902 0
 52C:\Users\User\Documents\apple\asset\iphone14text.png133111614649083759 0
 56C:\Users\User\Documents\apple\asset\leftHandIphone14.jpg133111627056616306 0

@@ -537,6 +537,9 @@ var _gradientBackgroundPng = require("./asset/gradientBackground.png");
 var _gradientBackgroundPngDefault = parcelHelpers.interopDefault(_gradientBackgroundPng);
 var _gradientBackgroundReversedPng = require("./asset/gradientBackgroundReversed.png");
 var _gradientBackgroundReversedPngDefault = parcelHelpers.interopDefault(_gradientBackgroundReversedPng);
+var _blackImageJpg = require("./asset/blackImage.jpg");
+var _blackImageJpgDefault = parcelHelpers.interopDefault(_blackImageJpg);
+console.log((0, _gradientBackgroundPngDefault.default), (0, _gradientBackgroundReversedPngDefault.default));
 let timelineLite_Iphone14_Text = new TimelineLite();
 let iphone_14_text_container = document.getElementById("iphone_14_text_container");
 let controller_Iphone14_Text = new ScrollMagic.Controller();
@@ -602,36 +605,43 @@ let textChangingColorContainer = document.getElementById("textChangingColorConta
 let bigContainer = document.getElementById("bigContainer");
 let textChangingColor = document.getElementById("textChangingColor");
 let text_changing = document.getElementById("text_changing");
-TextcolorChangingEffect_TimelineLite.fromTo(textChangingColor, 5, {
-    fontSize: `50px`,
-    webkitBackgroundClip: "text",
-    background: `linear-gradient( 126.3deg,  rgba(30,2,83,1) 32.2%, rgba(198,55,160,0.46) 109.2% )`,
-    webkitTextFillColor: "transparent",
-    color: "red"
-}, {
-    fontSize: `50px`,
-    webkitBackgroundClip: "text",
-    // backgroundImage:`url(${gradientBackgroundReversed})`,
-    // // ???
-    // // background-image: linear-gradient( 109.6deg,  rgba(255,24,134,1) 11.2%, rgba(252,232,68,1) 52%, rgba(53,178,239,1) 100.2% );
-    // // background-image: linear-gradient( 109.6deg,  rgba(255,174,0,1) 11.2%, rgba(255,0,0,1) 100.2% );
-    background: "linear-gradient( 109.6deg,  #FF8DC7,#FFACC7",
-    webkitTextFillColor: `text`,
-    webkitTextFillColor: "transparent"
-}).to(textChangingColor, 5, {
-    fontSize: `50px`,
-    webkitBackgroundClip: "text",
-    background: `linear-gradient( 126.3deg,  rgba(30,2,83,1) 32.2%, rgba(198,55,160,0.46) 109.2% )`,
-    webkitTextFillColor: "transparent",
-    color: "red"
+TextcolorChangingEffect_TimelineLite.from(textChangingColor, 2, {
+    backgroundPosition: `0% 0%`
+}).to(textChangingColor, 2, {
+    backgroundPosition: `0% 100%`
+}).to(textChangingColor, 2, {
+    backgroundPosition: `0% 0%`
 });
 new ScrollMagic.Scene({
     triggerHook: 0,
     duration: 1000,
     triggerElement: textChangingColorContainer
-}).addIndicators().setTween(TextcolorChangingEffect_TimelineLite).setPin(textChangingColorContainer).addTo(textChangingColorController);
+}).setTween(TextcolorChangingEffect_TimelineLite).setPin(textChangingColorContainer).addTo(textChangingColorController);
+let proBeyondTextContainer = document.getElementById("proBeyondTextContainer");
+let proBeyondTextTimeLineLite = new TimelineLite();
+let proBeyondTextController = new ScrollMagic.Controller();
+proBeyondTextTimeLineLite.from(proBeyondTextContainer, 2, {
+    backgroundPosition: `0% 0%`
+}).to(proBeyondTextContainer, 2, {
+    backgroundPosition: `0% 100%`
+}).to(proBeyondTextContainer, 2, {
+    backgroundPosition: `0% 0%`
+});
+// .to(
+//   proBeyondTextContainer,
+//   2,
+//   {
+//     background:`url(${gradientBackgroundReversed})`,
+//     backgroundPosition: `0% 0%`,
+//   },
+// );
+new ScrollMagic.Scene({
+    triggerHook: 0,
+    duration: 1000,
+    triggerElement: proBeyondTextContainer
+}).setTween(proBeyondTextTimeLineLite).setPin(proBeyondTextContainer).addTo(proBeyondTextController);
 
-},{"./asset/gradientBackground.png":"l5kC9","./asset/gradientBackgroundReversed.png":"cWROl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"l5kC9":[function(require,module,exports) {
+},{"./asset/gradientBackground.png":"l5kC9","./asset/gradientBackgroundReversed.png":"cWROl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./asset/blackImage.jpg":"kepAT"}],"l5kC9":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("1G2bZ") + "gradientBackground.8bc61098.png" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -701,6 +711,9 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["euTuy","igcvL"], "igcvL", "parcelRequire94c2")
+},{}],"kepAT":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("1G2bZ") + "blackImage.77e1b0b9.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}]},["euTuy","igcvL"], "igcvL", "parcelRequire94c2")
 
 //# sourceMappingURL=index.5baa4167.js.map

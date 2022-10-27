@@ -1,6 +1,8 @@
 import gradientBackground from "./asset/gradientBackground.png";
 import gradientBackgroundReversed from "./asset/gradientBackgroundReversed.png";
+import blackImage from "./asset/blackImage.jpg";
 
+console.log(gradientBackground,gradientBackgroundReversed)
 let timelineLite_Iphone14_Text = new TimelineLite();
 let iphone_14_text_container = document.getElementById(
   "iphone_14_text_container"
@@ -116,47 +118,55 @@ let textChangingColorContainer = document.getElementById(
 let bigContainer = document.getElementById("bigContainer");
 let textChangingColor = document.getElementById("textChangingColor");
 let text_changing = document.getElementById("text_changing");
-TextcolorChangingEffect_TimelineLite.fromTo(
-  
-  textChangingColor,
-  5,
-  {
-    fontSize: `50px`,
-    webkitBackgroundClip: "text",
-    background: `linear-gradient( 126.3deg,  rgba(30,2,83,1) 32.2%, rgba(198,55,160,0.46) 109.2% )`,
-    webkitTextFillColor: "transparent",
-    color: "red",
-  },
-  {
-    fontSize: `50px`,
-    webkitBackgroundClip: "text",
-    // backgroundImage:`url(${gradientBackgroundReversed})`,
-    // // ???
-    // // background-image: linear-gradient( 109.6deg,  rgba(255,24,134,1) 11.2%, rgba(252,232,68,1) 52%, rgba(53,178,239,1) 100.2% );
-    // // background-image: linear-gradient( 109.6deg,  rgba(255,174,0,1) 11.2%, rgba(255,0,0,1) 100.2% );
-    background: "linear-gradient( 109.6deg,  #FF8DC7,#FFACC7",
-    webkitTextFillColor: `text`,
-    webkitTextFillColor: "transparent",
-  }
-)
-  .to(textChangingColor, 5, {
-    fontSize: `50px`,
-    webkitBackgroundClip: "text",
-    background: `linear-gradient( 126.3deg,  rgba(30,2,83,1) 32.2%, rgba(198,55,160,0.46) 109.2% )`,
-    webkitTextFillColor: "transparent",
-    color: "red",
-  })
- 
- 
-  
-
+TextcolorChangingEffect_TimelineLite.from(textChangingColor, 2, {
+  backgroundPosition: `0% 0%`,
+})
+  .to(textChangingColor,2, { backgroundPosition: `0% 100%` })
+  .to(textChangingColor, 2,{ backgroundPosition: `0% 0%` });
 
 new ScrollMagic.Scene({
   triggerHook: 0,
   duration:1000,
   triggerElement: textChangingColorContainer,
 })
-  .addIndicators()
   .setTween(TextcolorChangingEffect_TimelineLite)
   .setPin(textChangingColorContainer)
   .addTo(textChangingColorController);
+
+let proBeyondTextContainer = document.getElementById(
+    "proBeyondTextContainer"
+);
+let proBeyondTextTimeLineLite = new TimelineLite();
+let proBeyondTextController = new ScrollMagic.Controller();
+proBeyondTextTimeLineLite
+  .from(proBeyondTextContainer, 2, { backgroundPosition: `0% 0%` })
+  .to(
+    proBeyondTextContainer,
+    2,
+    {
+      backgroundPosition: `0% 100%`,
+    },
+    
+  )
+  .to(proBeyondTextContainer, 2, {
+    backgroundPosition: `0% 0%`,
+  })
+  
+  // .to(
+  //   proBeyondTextContainer,
+  //   2,
+  //   {
+  //     background:`url(${gradientBackgroundReversed})`,
+  //     backgroundPosition: `0% 0%`,
+  //   },
+    
+  // );
+
+new ScrollMagic.Scene({
+  triggerHook: 0,
+  duration: 1000,
+  triggerElement: proBeyondTextContainer,
+})
+.setTween(proBeyondTextTimeLineLite)
+  .setPin(proBeyondTextContainer)
+  .addTo(proBeyondTextController);
